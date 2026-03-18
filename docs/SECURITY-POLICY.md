@@ -261,7 +261,7 @@ Referrer-Policy: strict-origin-when-cross-origin
 # Security Settings
 APP_ENV=production
 APP_DEBUG=false
-APP_URL=https://app.your-domain.com
+APP_URL=https://app.raqmicash.com
 
 # Session Security
 SESSION_LIFETIME=300
@@ -366,9 +366,9 @@ chown -R www-data:www-data bootstrap/cache/
 
 | Rôle | Contact | Disponibilité |
 |------|---------|---------------|
-| **Security Lead** | security@your-domain.com | 24/7 |
+| **Security Lead** | security@raqmicash.com | 24/7 |
 | **Admin On-Call** | +212 600 000 000 | 24/7 |
-| **Technical Lead** | tech@your-domain.com | 9h-18h |
+| **Technical Lead** | tech@raqmicash.com | 9h-18h |
 
 ### Escalation
 

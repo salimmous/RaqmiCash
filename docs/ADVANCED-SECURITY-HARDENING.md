@@ -1355,7 +1355,7 @@ SecurityLog::create([
 ## 📞 Emergency Contacts
 
 **Security Incidents:**
-- Email: security@your-domain.com
+- Email: security@raqmicash.com
 - Telegram: Admin Bot
 - Emergency Command: `php artisan security:lockdown --enable`
 

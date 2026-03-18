@@ -32,7 +32,7 @@ Vue d'ensemble complète de l'architecture technique de la plateforme.
 ┌───────▼────────┐  ┌───────▼────────┐  ┌───────▼────────┐
 │   Frontend     │  │   Laravel 12   │  │   Queue        │
 │   (Site 1)     │  │   Backend      │  │   Workers      │
-│   your-domain.com    │  │   app.your-domain.com│  │   (Redis)      │
+│   raqmicash.com    │  │   app.raqmicash.com│  │   (Redis)      │
 └────────────────┘  └───────┬────────┘  └────────────────┘
                             │
                 ┌───────────┼───────────┐
@@ -48,7 +48,7 @@ Vue d'ensemble complète de l'architecture technique de la plateforme.
 ## 🗂️ Structure du Projet
 
 ```
-your-domain.com/
+raqmicash.com/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/
@@ -296,13 +296,13 @@ offers (1) ──→ (N) offer_users
 │                  DOMAIN ROUTING                      │
 ├─────────────────────────────────────────────────────┤
 │                                                      │
-│  your-domain.com (Site 1 - Frontend)                      │
+│  raqmicash.com (Site 1 - Frontend)                      │
 │  ├── Landing page                                   │
 │  ├── Pages marketing                                │
 │  ├── Informations publiques                         │
-│  └── Liens vers app.your-domain.com                       │
+│  └── Liens vers app.raqmicash.com                       │
 │                                                      │
-│  app.your-domain.com (Site 2 - Backend)                   │
+│  app.raqmicash.com (Site 2 - Backend)                   │
 │  ├── Authentication                                 │
 │  ├── Dashboard Admin                                │
 │  ├── Dashboard Client                               │
@@ -315,7 +315,7 @@ offers (1) ──→ (N) offer_users
 **Implémentation Laravel :**
 ```php
 // routes/web.php
-if (request()->getHost() === 'your-domain.com') {
+if (request()->getHost() === 'raqmicash.com') {
     // Routes frontend uniquement
     Route::get('/', [WelcomeController::class, 'index']);
     Route::get('/about', [PageController::class, 'about']);

@@ -15,7 +15,7 @@ Ce document couvre toutes les fonctionnalités d'administration de la plateforme
 ### URL de Connexion
 
 ```
-https://app.your-domain.com/admin/login
+https://app.raqmicash.com/admin/login
 ```
 
 ### Compte Admin par Défaut
@@ -493,7 +493,7 @@ TELEGRAM_CHAT_ID="your_chat_id"
 
 ## 📞 Support Admin
 
-- **Email:** admin@your-domain.com
+- **Email:** admin@raqmicash.com
 - **Urgence:** +212 600 000 000
 - **Documentation:** docs/ADMIN-GUIDE.md
 

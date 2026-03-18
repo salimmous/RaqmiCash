@@ -94,8 +94,8 @@ docs/
 
 ## 🔗 Liens Utiles
 
-- **Site Web**: [your-domain.com](https://your-domain.com)
-- **Plateforme**: [app.your-domain.com](https://app.your-domain.com)
+- **Site Web**: [raqmicash.com](https://raqmicash.com)
+- **Plateforme**: [app.raqmicash.com](https://app.raqmicash.com)
 - **API Documentation**: [docs/API.md](./API.md)
 - **Rapporter un Bug**: [GitHub Issues](../../issues)
 
@@ -105,7 +105,7 @@ docs/
 
 Pour toute question ou assistance :
 
-- **Email**: support@your-domain.com
+- **Email**: support@raqmicash.com
 - **WhatsApp**: +212 600 000 000
 - **Documentation**: Ce dossier docs/
 

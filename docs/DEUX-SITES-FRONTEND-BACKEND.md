@@ -14,7 +14,7 @@ Un seul projet Laravel, une seule base (main_raqmicash). L’app y’ferrq 3la *
 |                | Site 1 (Frontend)     | Site 2 (Backend)           |
 |----------------|------------------------|----------------------------|
 | **Rôle**       | Public, vitrine        | App complète               |
-| **Exemples**   | your-domain.com, www         | app.your-domain.com, platform…   |
+| **Exemples**   | raqmicash.com, www         | app.raqmicash.com, platform…   |
 | **Contenu**    | Welcome, pages fixes   | Login, Admin, Client, API  |
 | **Auth**       | Non                    | Oui                        |
 
@@ -22,8 +22,8 @@ Un seul projet Laravel, une seule base (main_raqmicash). L’app y’ferrq 3la *
 
 ## Ce qu’il faut définir
 
-1. **Nom exact du Site 1** (frontend) : ex. `your-domain.com`, `www.your-domain.com`.
-2. **Nom exact du Site 2** (backend) : ex. `app.your-domain.com`, `platform.your-domain.com`, ou domaine séparé.
+1. **Nom exact du Site 1** (frontend) : ex. `raqmicash.com`, `www.raqmicash.com`.
+2. **Nom exact du Site 2** (backend) : ex. `app.raqmicash.com`, `platform.raqmicash.com`, ou domaine séparé.
 3. **Sur le Site 1** : ghir landing + lien « Connexion » / « S’inscrire » qui redirige vers le Site 2, wla 7aja khra ?
 
 ---

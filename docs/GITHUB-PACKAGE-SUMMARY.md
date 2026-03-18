@@ -54,7 +54,7 @@ The README is designed to:
 
 ```bash
 # Navigate to project
-cd /home/mouttaki/your-domain.com
+cd /home/mouttaki/raqmicash.com
 
 # Review the main README
 cat GITHUB-README.md

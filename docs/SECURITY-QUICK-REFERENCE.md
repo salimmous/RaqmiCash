@@ -207,7 +207,7 @@ $device->markAsTrusted();
 | Issue | Contact |
 |-------|---------|
 | Emergency | Telegram Bot |
-| Security Questions | security@your-domain.com |
+| Security Questions | security@raqmicash.com |
 | False Positives | Admin Dashboard |
 
 ---
@@ -227,17 +227,17 @@ $device->markAsTrusted();
 
 ```bash
 # Test firewall (should be blocked)
-curl -I https://your-domain.com/.env
-curl -I https://your-domain.com/wp-login.php
+curl -I https://raqmicash.com/.env
+curl -I https://raqmicash.com/wp-login.php
 
 # Test rate limiting (should block after 5 attempts)
-for i in {1..6}; do curl -X POST https://your-domain.com/api/login; done
+for i in {1..6}; do curl -X POST https://raqmicash.com/api/login; done
 
 # Test GeoIP (should work from Morocco)
-curl -H "CF-IPCountry: MA" https://your-domain.com
+curl -H "CF-IPCountry: MA" https://raqmicash.com
 
 # Test security headers
-curl -I https://your-domain.com | grep -E "X-Frame|X-Content|Strict-Transport"
+curl -I https://raqmicash.com | grep -E "X-Frame|X-Content|Strict-Transport"
 ```
 
 ---

@@ -131,10 +131,10 @@ php artisan cache:clear
 php artisan security:lockdown --status
 
 # Test firewall (should be blocked)
-curl -I https://your-domain.com/.env
+curl -I https://raqmicash.com/.env
 
 # Test rate limiting
-for i in {1..6}; do curl -X POST https://your-domain.com/api/login; done
+for i in {1..6}; do curl -X POST https://raqmicash.com/api/login; done
 ```
 
 ### Step 4: Configure Telegram Alerts
@@ -282,7 +282,7 @@ php artisan tinker
 **Implemented by:** Security Hardening Package  
 **Version:** 2.0  
 **Date:** March 7, 2026  
-**Platform:** Raqmi Cash (your-domain.com)  
+**Platform:** Raqmi Cash (raqmicash.com)  
 **Framework:** Laravel 12 + PHP 8.4  
 
 ---

@@ -6,7 +6,7 @@ Documentation complète de l'API REST pour les développeurs.
 
 ## 🚀 Vue d'ensemble
 
-- **Base URL:** `https://app.your-domain.com/api`
+- **Base URL:** `https://app.raqmicash.com/api`
 - **Format:** JSON
 - **Authentification:** Bearer Token (Laravel Sanctum)
 - **Version:** v1
@@ -548,7 +548,7 @@ Authorization: Bearer {token}
 ```javascript
 // Login
 const login = async (email, password) => {
-  const response = await fetch('https://app.your-domain.com/api/login', {
+  const response = await fetch('https://app.raqmicash.com/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -562,7 +562,7 @@ const login = async (email, password) => {
 
 // Créer une recharge
 const createRecharge = async (token, operator, phone, amount) => {
-  const response = await fetch('https://app.your-domain.com/api/recharges', {
+  const response = await fetch('https://app.raqmicash.com/api/recharges', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -579,7 +579,7 @@ const createRecharge = async (token, operator, phone, amount) => {
 
 ```php
 // Login
-$ch = curl_init('https://app.your-domain.com/api/login');
+$ch = curl_init('https://app.raqmicash.com/api/login');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
@@ -593,7 +593,7 @@ $data = json_decode($response, true);
 $token = $data['token'];
 
 // Créer une recharge
-$ch = curl_init('https://app.your-domain.com/api/recharges');
+$ch = curl_init('https://app.raqmicash.com/api/recharges');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
@@ -616,7 +616,7 @@ $result = json_decode($response, true);
 import requests
 
 # Login
-response = requests.post('https://app.your-domain.com/api/login', json={
+response = requests.post('https://app.raqmicash.com/api/login', json={
     'email': 'user@example.com',
     'password': 'password'
 })
@@ -625,7 +625,7 @@ token = response.json()['token']
 # Créer une recharge
 headers = {'Authorization': f'Bearer {token}'}
 response = requests.post(
-    'https://app.your-domain.com/api/recharges',
+    'https://app.raqmicash.com/api/recharges',
     json={'operator': 'IAM', 'phone': '0612345678', 'amount': 100},
     headers=headers
 )
@@ -647,8 +647,8 @@ result = response.json()
 ## 📞 Support API
 
 - **Documentation:** docs/API.md
-- **Email:** api@your-domain.com
-- **Status:** https://status.your-domain.com
+- **Email:** api@raqmicash.com
+- **Status:** https://status.raqmicash.com
 
 ---
 

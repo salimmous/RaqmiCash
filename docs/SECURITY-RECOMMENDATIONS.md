@@ -391,7 +391,7 @@ $request->validate([
 ## 📞 Security Contacts
 
 **For security issues:**
-- Email: security@your-domain.com
+- Email: security@raqmicash.com
 - Telegram: [Admin Bot]
 - Emergency: [Phone number]
 
