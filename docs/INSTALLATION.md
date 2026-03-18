@@ -383,7 +383,7 @@ En cas de problème lors de l'installation :
 
 - **Documentation**: Consultez les autres fichiers dans `docs/`
 - **Issues**: Ouvrez une issue sur GitHub
-- **Email**: support@raqmicash.com
+- **Email**: salim.moustanir@gmail.com
 
 ---
 

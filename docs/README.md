@@ -105,8 +105,8 @@ docs/
 
 Pour toute question ou assistance :
 
-- **Email**: support@raqmicash.com
-- **WhatsApp**: +212 600 000 000
+- **Email**: salim.moustanir@gmail.com
+- **WhatsApp**: +212 660 727 185
 - **Documentation**: Ce dossier docs/
 
 ---

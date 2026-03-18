@@ -494,7 +494,7 @@ TELEGRAM_CHAT_ID="your_chat_id"
 ## 📞 Support Admin
 
 - **Email:** admin@raqmicash.com
-- **Urgence:** +212 600 000 000
+- **Urgence:** +212 660 727 185
 - **Documentation:** docs/ADMIN-GUIDE.md
 
 ---
