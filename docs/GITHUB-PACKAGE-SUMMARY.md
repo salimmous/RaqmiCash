@@ -29,7 +29,7 @@ This document summarizes all files created for publishing your project on GitHub
 - **Security features** highlighted (firewall, GeoIP, etc.)
 - **API documentation** summary
 - **Installation instructions** for developers
-- **Deployment guide** with Kamal
+- **Deployment guide** with Docker
 - **Commission system** explanation
 - **Project structure** overview
 - **Documentation links**
@@ -92,7 +92,6 @@ git clone https://github.com/YOUR-USERNAME/raqmicash.git
 
 # Essential cleanup:
 rm -rf .env
-rm -rf .kamal/.env
 rm -rf storage/logs/*
 rm -rf storage/app/backups/*
 rm -rf kyc-files/
@@ -159,7 +158,6 @@ raqmicash/
 rm -rf .env
 rm -rf .env.local
 rm -rf .env.production
-rm -rf .kamal/.env
 
 # Database with real data
 rm -rf database/database.sqlite
@@ -289,7 +287,7 @@ After publishing:
 
 - [GitHub Docs](https://docs.github.com)
 - [Laravel Documentation](https://laravel.com/docs)
-- [Kamal Documentation](https://kamal-deploy.org)
+- [Docker Documentation](https://docs.docker.com)
 
 ---
 

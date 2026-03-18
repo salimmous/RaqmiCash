@@ -11,7 +11,6 @@ Use this checklist before pushing to GitHub to ensure no sensitive data is expos
 - [ ] **`.env`** - Environment file with secrets
 - [ ] **`.env.local`** - Local environment overrides
 - [ ] **`.env.production`** - Production credentials
-- [ ] **`.kamal/.env`** - Kamal deployment secrets
 - [ ] **`database/database.sqlite`** - Database with real data
 - [ ] **`storage/logs/laravel.log`** - Logs may contain sensitive info
 - [ ] **`storage/app/backups/*.sql`** - Database backups
@@ -100,7 +99,6 @@ git status
 - [ ] `jebab-optimize.sh` - Review for secrets
 - [ ] `raqmicash-clean.sh` - Review for secrets
 - [ ] `raqmicash-optimize.sh` - Review for secrets
-- [ ] `setup-kamal.sh` - Remove secrets
 - [ ] `compress-for-download.sh` - Review
 - [ ] `telegram-backup-cron.sh` - Remove credentials
 - [ ] `CRON-TELEGRAM-BACKUP.txt` - Remove credentials
