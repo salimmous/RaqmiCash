@@ -391,7 +391,7 @@ $request->validate([
 ## 📞 Security Contacts
 
 **For security issues:**
-- Email: security@jebab.com
+- Email: security@your-domain.com
 - Telegram: [Admin Bot]
 - Emergency: [Phone number]
 

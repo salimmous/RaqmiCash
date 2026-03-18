@@ -32,7 +32,7 @@ Vue d'ensemble complète de l'architecture technique de la plateforme.
 ┌───────▼────────┐  ┌───────▼────────┐  ┌───────▼────────┐
 │   Frontend     │  │   Laravel 12   │  │   Queue        │
 │   (Site 1)     │  │   Backend      │  │   Workers      │
-│   jebab.com    │  │   app.jebab.com│  │   (Redis)      │
+│   your-domain.com    │  │   app.your-domain.com│  │   (Redis)      │
 └────────────────┘  └───────┬────────┘  └────────────────┘
                             │
                 ┌───────────┼───────────┐
@@ -48,7 +48,7 @@ Vue d'ensemble complète de l'architecture technique de la plateforme.
 ## 🗂️ Structure du Projet
 
 ```
-jebab.com/
+your-domain.com/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/
@@ -296,13 +296,13 @@ offers (1) ──→ (N) offer_users
 │                  DOMAIN ROUTING                      │
 ├─────────────────────────────────────────────────────┤
 │                                                      │
-│  jebab.com (Site 1 - Frontend)                      │
+│  your-domain.com (Site 1 - Frontend)                      │
 │  ├── Landing page                                   │
 │  ├── Pages marketing                                │
 │  ├── Informations publiques                         │
-│  └── Liens vers app.jebab.com                       │
+│  └── Liens vers app.your-domain.com                       │
 │                                                      │
-│  app.jebab.com (Site 2 - Backend)                   │
+│  app.your-domain.com (Site 2 - Backend)                   │
 │  ├── Authentication                                 │
 │  ├── Dashboard Admin                                │
 │  ├── Dashboard Client                               │
@@ -315,7 +315,7 @@ offers (1) ──→ (N) offer_users
 **Implémentation Laravel :**
 ```php
 // routes/web.php
-if (request()->getHost() === 'jebab.com') {
+if (request()->getHost() === 'your-domain.com') {
     // Routes frontend uniquement
     Route::get('/', [WelcomeController::class, 'index']);
     Route::get('/about', [PageController::class, 'about']);

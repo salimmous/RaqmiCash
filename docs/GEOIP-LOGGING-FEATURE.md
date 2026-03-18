@@ -116,7 +116,7 @@ resources/views/layouts/admin.blade.php   - إضافة menu link
 
 1. سجل فـ [Cloudflare](https://cloudflare.com)
 2. غير Nameservers للدومين
-3. فعل Proxy لـ jebab.com
+3. فعل Proxy لـ your-domain.com
 
 **الفائدة:**
 - GeoIP دقيق ومجاني
@@ -209,7 +209,7 @@ php artisan migrate:status
     source: 'cloudflare',
     accessDenied: false,
     path: '/dashboard',
-    url: 'https://jebab.com/dashboard',
+    url: 'https://your-domain.com/dashboard',
     userAgent: 'Mozilla/5.0...',
     extraData: ['custom' => 'data']
 );

@@ -15,7 +15,7 @@ Ce document couvre toutes les fonctionnalités d'administration de la plateforme
 ### URL de Connexion
 
 ```
-https://app.jebab.com/admin/login
+https://app.your-domain.com/admin/login
 ```
 
 ### Compte Admin par Défaut
@@ -493,7 +493,7 @@ TELEGRAM_CHAT_ID="your_chat_id"
 
 ## 📞 Support Admin
 
-- **Email:** admin@jebab.com
+- **Email:** admin@your-domain.com
 - **Urgence:** +212 600 000 000
 - **Documentation:** docs/ADMIN-GUIDE.md
 

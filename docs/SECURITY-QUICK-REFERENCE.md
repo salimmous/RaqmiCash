@@ -207,7 +207,7 @@ $device->markAsTrusted();
 | Issue | Contact |
 |-------|---------|
 | Emergency | Telegram Bot |
-| Security Questions | security@jebab.com |
+| Security Questions | security@your-domain.com |
 | False Positives | Admin Dashboard |
 
 ---
@@ -227,17 +227,17 @@ $device->markAsTrusted();
 
 ```bash
 # Test firewall (should be blocked)
-curl -I https://jebab.com/.env
-curl -I https://jebab.com/wp-login.php
+curl -I https://your-domain.com/.env
+curl -I https://your-domain.com/wp-login.php
 
 # Test rate limiting (should block after 5 attempts)
-for i in {1..6}; do curl -X POST https://jebab.com/api/login; done
+for i in {1..6}; do curl -X POST https://your-domain.com/api/login; done
 
 # Test GeoIP (should work from Morocco)
-curl -H "CF-IPCountry: MA" https://jebab.com
+curl -H "CF-IPCountry: MA" https://your-domain.com
 
 # Test security headers
-curl -I https://jebab.com | grep -E "X-Frame|X-Content|Strict-Transport"
+curl -I https://your-domain.com | grep -E "X-Frame|X-Content|Strict-Transport"
 ```
 
 ---

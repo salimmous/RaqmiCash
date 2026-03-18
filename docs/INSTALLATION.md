@@ -53,7 +53,7 @@ sudo apt-get install php8.4-bcmath php8.4-curl php8.4-mbstring php8.4-mysql php8
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-org/jebab.com.git
+git clone https://github.com/your-org/your-domain.com.git
 ```
 
 ### Étape 2 : Installer les Dépendances
@@ -168,7 +168,7 @@ sudo apt-get install -y nginx mysql-server php8.4-fpm php8.4-mysql \
 ```bash
 # Cloner dans le répertoire web
 cd /var/www
-git clone https://github.com/votre-org/jebab.com.git
+git clone https://github.com/your-org/your-domain.com.git
 
 # Installer les dépendances
 composer install --no-dev --optimize-autoloader
@@ -180,7 +180,7 @@ npm run build
 
 **Créer le fichier de configuration :**
 ```bash
-sudo nano /etc/nginx/sites-available/jebab.com
+sudo nano /etc/nginx/sites-available/your-domain.com
 ```
 
 **Configuration Nginx :**
@@ -188,8 +188,8 @@ sudo nano /etc/nginx/sites-available/jebab.com
 server {
     listen 80;
     listen [::]:80;
-    server_name jebab.com www.jebab.com;
-    root /var/www/jebab.com/public;
+    server_name your-domain.com www.your-domain.com;
+    root /var/www/your-domain.com/public;
 
     add_header X-Frame-Options "SAMEORIGIN";
     add_header X-Content-Type-Options "nosniff";
@@ -221,7 +221,7 @@ server {
 
 **Activer le site :**
 ```bash
-sudo ln -s /etc/nginx/sites-available/jebab.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/your-domain.com /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
@@ -233,7 +233,7 @@ sudo systemctl reload nginx
 sudo apt-get install -y certbot python3-certbot-nginx
 
 # Obtenir le certificat
-sudo certbot --nginx -d jebab.com -d www.jebab.com
+sudo certbot --nginx -d your-domain.com -d www.your-domain.com
 
 # Vérifier le renouvellement automatique
 sudo certbot renew --dry-run
@@ -248,9 +248,9 @@ php artisan route:cache
 php artisan view:cache
 
 # Permissions
-chown -R www-data:www-data /var/www/jebab.com
-chmod -R 775 /var/www/jebab.com/storage
-chmod -R 775 /var/www/jebab.com/bootstrap/cache
+chown -R www-data:www-data /var/www/your-domain.com
+chmod -R 775 /var/www/your-domain.com/storage
+chmod -R 775 /var/www/your-domain.com/bootstrap/cache
 ```
 
 ### Étape 6 : Configuration Supervisor (Queue)
@@ -264,7 +264,7 @@ sudo nano /etc/supervisor/conf.d/jebab-worker.conf
 ```ini
 [program:jebab-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/jebab.com/artisan queue:work database --sleep=3 --tries=3 --max-time=3600
+command=php /var/www/your-domain.com/artisan queue:work database --sleep=3 --tries=3 --max-time=3600
 autostart=true
 autorestart=true
 stopasuser=false
@@ -272,7 +272,7 @@ killasgroup=true
 user=www-data
 numprocs=2
 redirect_stderr=true
-stdout_logfile=/var/www/jebab.com/storage/logs/worker.log
+stdout_logfile=/var/www/your-domain.com/storage/logs/worker.log
 stopwaitsecs=3600
 ```
 
@@ -290,7 +290,7 @@ sudo supervisorctl start jebab-worker:*
 crontab -e
 
 # Ajouter la ligne suivante
-* * * * * cd /var/www/jebab.com && php artisan schedule:run >> /dev/null 2>&1
+* * * * * cd /var/www/your-domain.com && php artisan schedule:run >> /dev/null 2>&1
 ```
 
 ---
@@ -322,9 +322,9 @@ Code POS: OT1002
 
 ```bash
 # Réinitialiser les permissions
-sudo chown -R www-data:www-data /var/www/jebab.com
-sudo chmod -R 775 /var/www/jebab.com/storage
-sudo chmod -R 775 /var/www/jebab.com/bootstrap/cache
+sudo chown -R www-data:www-data /var/www/your-domain.com
+sudo chmod -R 775 /var/www/your-domain.com/storage
+sudo chmod -R 775 /var/www/your-domain.com/bootstrap/cache
 ```
 
 ### Problème : Erreur 500
@@ -383,7 +383,7 @@ En cas de problème lors de l'installation :
 
 - **Documentation**: Consultez les autres fichiers dans `docs/`
 - **Issues**: Ouvrez une issue sur GitHub
-- **Email**: support@jebab.com
+- **Email**: support@your-domain.com
 
 ---
 

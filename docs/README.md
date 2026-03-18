@@ -94,8 +94,8 @@ docs/
 
 ## 🔗 Liens Utiles
 
-- **Site Web**: [jebab.com](https://jebab.com)
-- **Plateforme**: [app.jebab.com](https://app.jebab.com)
+- **Site Web**: [your-domain.com](https://your-domain.com)
+- **Plateforme**: [app.your-domain.com](https://app.your-domain.com)
 - **API Documentation**: [docs/API.md](./API.md)
 - **Rapporter un Bug**: [GitHub Issues](../../issues)
 
@@ -105,7 +105,7 @@ docs/
 
 Pour toute question ou assistance :
 
-- **Email**: support@jebab.com
+- **Email**: support@your-domain.com
 - **WhatsApp**: +212 600 000 000
 - **Documentation**: Ce dossier docs/
 
